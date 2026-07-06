@@ -17,6 +17,8 @@ public class mmm {
         }
         return -1;
     }
+
+
     public static int getlargest(int numbers[]){
         int largest = Integer.MIN_VALUE;
         for(int i = 0;i<numbers.length;i++){
@@ -26,6 +28,8 @@ public class mmm {
         }
         return largest;
     }
+
+
     public static int getsmallest(int numbers[]){
         int smallest = Integer.MAX_VALUE;
         for(int i = 0;i<numbers.length;i++){
@@ -35,6 +39,8 @@ public class mmm {
         }
         return smallest;
     }
+
+
     public static int binarysearch(int numbers[],int key){
         int start =0; int end =numbers.length-1;
         while(start<=end){
@@ -51,22 +57,29 @@ public class mmm {
         }
         return -1;
     }
+
+
     public static void reverse(int numbers[]){
         int first =0 ; int last = numbers.length-1;
         while(first<last){
             // swap
-            int temp = numbers[last];
-            numbers[last]=numbers[first];
-            numbers[first]=temp;
+//            int temp = numbers[last];
+//            numbers[last]=numbers[first];
+//            numbers[first]=temp;
+            int temp = numbers[first];
+            numbers[first]=numbers[last];
+            numbers[last]=temp;
             first++;
             last--;
         }
     }
+
+
     public static void pairs(int numbers[]){
         int tp =0;
         for(int i = 0;i<numbers.length;i++){
             int curr =numbers[i];
-            for(int j=0;j<numbers.length;j++){
+            for(int j=i+1;j<numbers.length;j++){
                 System.out.print("("+curr+","+numbers[j]+")");
                 tp++;
             }
@@ -74,6 +87,7 @@ public class mmm {
         }
         System.out.println(tp);
     }
+
     public static void subarrays(int numbers[]){
         int ts=0;
         for (int i =0;i<numbers.length;i++){
@@ -90,6 +104,8 @@ public class mmm {
         }
         System.out.println("total subarrays:"+ts);
     }
+
+
     public static void Max_subarray(int numbers[]){
         int currsum=0;
         int maxsum=Integer.MIN_VALUE;
@@ -109,6 +125,7 @@ public class mmm {
         }
         System.out.println("max sum"+maxsum);
     }
+
     public static void Max_subarray_prefix(int numbers[]){
         int currsum=0;
         int maxsum=Integer.MIN_VALUE;
@@ -183,55 +200,57 @@ public class mmm {
     }
 
     public static void main(String[] args) {//video 3
-        int marks[] = new int[100];
-        Scanner sc = new Scanner(System.in);
-        marks[0] = sc.nextInt();
-        marks[1] = sc.nextInt();
-        marks[2] = sc.nextInt();
-        System.out.println("Physics Marks" + marks[0]);
-        System.out.println("Chemistry Marks" + marks[1]);
-        System.out.println("Maths Marks" + marks[2]);
-        int percentage = (marks[0] + marks[1] + marks[2]) / 100;
-        int Marks[] = {56, 8, 54, 6, 7};
-        update(Marks);
-        for (int i = 0; i<Marks.length; i++) {
-            System.out.print(Marks[i] + " ");
-        }
-
-
+//        int marks[] = new int[100];
+//        Scanner sc = new Scanner(System.in);
+//        marks[0] = sc.nextInt();
+//        marks[1] = sc.nextInt();
+//        marks[2] = sc.nextInt();
+//        System.out.println("Physics Marks" + marks[0]);
+//        System.out.println("Chemistry Marks" + marks[1]);
+//        System.out.println("Maths Marks" + marks[2]);
+//
+//
+//        int percentage = (marks[0] + marks[1] + marks[2]) / 100;
+//        int Marks[] = {56, 8, 54, 6, 7};
+//        update(Marks);
+//        for (int i = 0; i<Marks.length; i++) {
+//            System.out.print(Marks[i] + " ");
+//        }
+////
+//
         int numbers[] = {2, 4, 56, 54, 42, 3};
-        int key = 59;
-        int index = Linearsearch(numbers, key);
-        if (index == -1) {
-            System.out.println("not found ");
-        }
-        else{
-            System.out.println("key is at index:"+index);
-        }
-        System.out.println("The largest Value is :"+ getlargest(numbers));
-        System.out.println("The smallest Value is :"+ getsmallest(numbers));
-        System.out.println("index for key is:"+ binarysearch(numbers,56));
-        reverse(numbers);
-        //print array
-        for (int i = 0; i<numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
-        }
-        System.out.println();
-        pairs(numbers);
+//        int key = 59;
+//        int index = Linearsearch(numbers, key);
+//        if (index == -1) {
+//            System.out.println("not found ");
+//        }
+//        else{
+//            System.out.println("key is at index:"+index);
+//        }
+//        System.out.println("The largest Value is :"+ getlargest(numbers));
+//        System.out.println("The smallest Value is :"+ getsmallest(numbers));
+       // System.out.println("index for key is:"+ binarysearch(numbers,56));
+//        reverse(numbers);
+//        //print array
+//        for (int i = 0; i<numbers.length; i++) {
+//            System.out.print(numbers[i] + " ");
+//        }
+//        System.out.println();
+        //pairs(numbers);
         int Numbers[]={1,-2,6,-1,3};
-        subarrays(Numbers);
-        Max_subarray(Numbers);
-        Max_subarray_prefix(Numbers);
-        int lumbers[]={-2,-3,4,-1,-2,1,5,-3};
-        kadans(lumbers);
-        // rain water problem
-        int height[]={4,2,0,6,3,2,5};
-        System.out.println( trapped_rain_water(height));
-        // stokes
-        int prices[]={7,1,5,3,6,4};
-        System.out.println(stokes_profit(prices));
-
-
+        //subarrays(Numbers);
+       Max_subarray(Numbers);
+//        Max_subarray_prefix(Numbers);
+//        int lumbers[]={-2,-3,4,-1,-2,1,5,-3};
+//        kadans(lumbers);
+//        // rain water problem
+//        int height[]={4,2,0,6,3,2,5};
+//        System.out.println( trapped_rain_water(height));
+//        // stokes
+//        int prices[]={7,1,5,3,6,4};
+//        System.out.println(stokes_profit(prices));
+//
+//
 
     }
 }
