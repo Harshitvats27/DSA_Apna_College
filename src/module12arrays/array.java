@@ -1,8 +1,6 @@
 package module12arrays;
 
-import java.util.*;
-import java.util.Scanner;
-public class mmm {
+public class array {
     public static void update(int Marks[]) {
         for (int i = 0; i < Marks.length; i++) {
             Marks[i] = Marks[i] + 1;

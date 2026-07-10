@@ -70,16 +70,16 @@ public class sorting {
         int arr[]={5,4,1,3,2};
         bubblesort(arr);
         printarr(arr);
-        selectionsort(arr);
-        printarr(arr);
-        insertionsort(arr);
-        printarr(arr);
-        Arrays.sort(arr);
-        printarr(arr);
-        Arrays.sort(arr,1,5);
-        printarr(arr);
-        int arrr[]={5,5,5,7,2,1,3,4,1,3,2};
-        countingsort(arrr);
+//        selectionsort(arr);
+//        printarr(arr);
+//        insertionsort(arr);
+//        printarr(arr);
+//        Arrays.sort(arr);
+//        printarr(arr);
+//        Arrays.sort(arr,1,5);
+//        printarr(arr);
+//        int arrr[]={5,5,5,7,2,1,3,4,1,3,2};
+//        countingsort(arrr);
 
     }
 }
