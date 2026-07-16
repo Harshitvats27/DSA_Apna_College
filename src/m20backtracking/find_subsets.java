@@ -21,6 +21,8 @@ public class find_subsets {
     }
     public static void main(String[] args) {
 String str="abc";
+String str2="abcdefg";
 subsets(str,"",0);
+subsets(str2,"",0);
     }
 }
