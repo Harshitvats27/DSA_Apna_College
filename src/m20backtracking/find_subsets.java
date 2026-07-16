@@ -9,7 +9,7 @@ public class find_subsets {
                 return;
             }else{
                 System.out.println(ans);
-                return;
+                return;// it i required
             }
 
         }
